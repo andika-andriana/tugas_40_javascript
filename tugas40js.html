@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Belajar Javascript - NIOMIC</title>
+</head>
+
+<body>
+  <button type="button" onclick="tugas40()" name="button">Jalankan</button>
+  <br />
+  <br />
+  <hr />
+  <b>Base URI</b> Property : <br />
+  <p id="satu">contoh</p>
+  <hr />
+  <b>Body</b> Property : <br />
+  <p id="dua">contoh</p>
+  <hr />
+  <b>Create</b> Element : <br /><br />
+  <script type="text/javascript">
+    function tugas40() {
+
+      var satu = document.baseURI;
+      document.getElementById("satu").innerHTML = satu;
+
+      var dua = document.body.style.backgroundColor = "green";
+      document.getElementById("dua").innerHTML = "color: " + dua;
+
+      var tiga = document.createElement("input");
+      document.body.appendChild(tiga);
+
+    }
+  </script>
+</body>
+
+</html>
